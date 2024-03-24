@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import {Link} from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 const options =[
     {value:"datascience",label:'Data Science'},
@@ -75,6 +76,12 @@ const Createusers = () => {
     //     }
     // }
   return (
+    <>
+    <Helmet>
+            <title>Create User</title>
+            <meta name='description' content="Create user from api"/>
+            <link rel="canonical" href='/create'/>
+        </Helmet>
     <div>
         <form onSubmit={handleSubmit}>
             <div>
@@ -125,6 +132,7 @@ const Createusers = () => {
         <button>Next</button>
         </Link>
     </div>
+    </>
   )
 }
 

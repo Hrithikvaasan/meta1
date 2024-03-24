@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios';
 import {Link} from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 const Captchaform = () => {
     const [captcha, setCaptcha] = useState(false);
@@ -79,6 +80,11 @@ async function handleCountryChange(e) {
 
     return (
         <>
+        <Helmet>
+            <title>Captchar</title>
+            <meta name='description' content="To verify the captcha from api"/>
+            <link rel="canonical" href='/captcha'/> 
+        </Helmet>
         <form onSubmit={handleSubmit}>
             <div>
                 <div>

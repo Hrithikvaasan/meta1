@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 export default function CreateUsers(){
     const[formData, setFormData] = React.useState({
@@ -43,6 +44,11 @@ export default function CreateUsers(){
     }
     return(
         <>
+        <Helmet>
+            <title>Post</title>
+            <meta name='description' content="Post from dummy api"/>
+            <link rel="canonical" href='/post'/>
+        </Helmet>
         <form onSubmit={handleSubmit}>
         <div>
             <label htmlFor = "title">Title</label>

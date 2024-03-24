@@ -37,7 +37,7 @@ export default function Form() {
             <title>Forms</title>
             <meta name='description' content="Try our various form types now"/>
             <link rel="canonical" href='/'/>
-        </Helmet>
+        </Helmet> 
         <form onSubmit={handleSubmit}>
         <div>
             <label htmlFor = "firstName">First Name</label>

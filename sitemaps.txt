@@ -1,1 +1,5 @@
 https://meta-trial.netlify.app/
+https://meta-trial.netlify.app/practice
+https://meta-trial.netlify.app/create
+https://meta-trial.netlify.app/captcha
+https://meta-trial.netlify.app/post
